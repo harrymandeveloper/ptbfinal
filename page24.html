@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 24</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lorem-text {
+            font-size: 16pt;
+            line-height: 1.2;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .nav-links {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-center mb-4">Page 24</h1>
+        
+        <div class="lorem-text">
+            <p>So went Shelley. So went Woolf. So went Hippasus too, some say, a punishment from the Pythagoreans for discovering irrational numbers. Night at the abandoned quarry. It was summer. I was drunk. Fifty feet of stagnant water, I closed my eyes and jumped. So went Shelley. So went Woolf. I don’t remember the seconds of fall or the surface rising to meet me. Breath flushed like a lung that’s punctured. So went Li Bai in poetic myth, reaching from the coracle to grasp at the moon, his hand passed through the river’s skin, his body followed after. So went Antinous, perhaps, he lives unaging in his marble clones, the Nile spreads his atoms wide. The shouts and calls of my friends above were only the faintest din. So went Cao E, by choice, she trawled the river for her father’s corpse until one day she joined it. Qu Yuan clutched a rock in protest and sank, the villagers beat drums to scare away fish so they would not eat Qu Yuan. And I dreamed of reeds like bandages to love and wrap me up. A swirl of sludge and broken sticks, of leaf-litter decomposing. So went Shelley. So went Woolf. So Thomas went as well. It wasn’t the sky bright clarity of a daytime pool with its robin’s egg tiles and the scattering of light, but there was the moon like a torch beam. And there were no sharks with well-painted eyes, no armbands left in the shed, but there was the sound of splashing. Instead of a child sat watching, an arm wrapped over my chest. Instead of the pool water settling, legs kicked and voices calling. There might not be the blue tiled wall, but in place of that there’s this wet bank, these reeds, the long still not quite corpse of me hauled thrashing from nothing forever.</p>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" class="btn btn-outline-primary">Back to Start</a>
+            <a href="#" class="btn btn-primary continue-link">Continue</a>
+        </div>
+    </div>
+
+    <script>
+        // Generate random continue link (excluding current page and index)
+        document.querySelector('.continue-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            let randomPage;
+            do {
+                randomPage = Math.floor(Math.random() * 29) + 1;
+            } while (randomPage === 24); // Change this number to match current page
+            
+            window.location.href = 'page' + randomPage + '.html';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

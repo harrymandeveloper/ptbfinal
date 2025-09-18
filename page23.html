@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 23</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lorem-text {
+            font-size: 16pt;
+            line-height: 1.2;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .nav-links {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-center mb-4">Page 23</h1>
+        
+        <div class="lorem-text">
+            <p>Winter in the mountains, but warm. Two thirds of the ski resort preemptively closed, in the rest the queues were swollen. Thin rivers of ice curved down an otherwise grassy mountain. The piste was scant and muddied, with grey rocks poking through. More fatal crashes occurred in a single month than in the whole of the previous year. My friends would go up the mountain, ignoring official advice, and I’d sit on the balcony watching the sun, drinking beer from quarter pint bottles. Sun on the patches of blueish snow that gripped the less prominent ledges. Sun on the pine tree’s needles as they glistened wet with melt. Sun on the hulls of the helicopters, transporting the injured or dead. A drip from the gutter’s plastic was marking out the time. In the parking lot across from my chalet, ambulances sat on alert. Their wheels would spin on the melting ice, and often I’d run down to help push them out, but this time I was shirtless and watching. A crowd had gathered round a body, so thick I could not see past them. I took out my camera and zoomed in through the lens. Grief, from a distance, looks strangely performed. People clutching at the sides of their jaw, grabbing on to one another with their faces screwed up. Staggering three steps forward, turning part way, sinking to their knees with their head in their hands. It looked like over-wrought acting. The same had happened when Thomas died, when they pulled him out and tried CPR, the same movements, same expressions. Interchangeable, like that. I focused the lens on the ambulance, its red cross and the slush in its wheel arch. The paramedic brought out a black bag, about half the length a bodybag should be. And behind the lens I snorted a laugh, because how could they not see that the bag was too small? After that I put down the camera, ran inside and closed the blind. I balled my hand into a fist and smacked the side of my head. Still when my focus is drifting the sound of that snort comes back– the exact moronic cadence of it, the thought of a half size bag.</p>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" class="btn btn-outline-primary">Back to Start</a>
+            <a href="#" class="btn btn-primary continue-link">Continue</a>
+        </div>
+    </div>
+
+    <script>
+        // Generate random continue link (excluding current page and index)
+        document.querySelector('.continue-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            let randomPage;
+            do {
+                randomPage = Math.floor(Math.random() * 29) + 1;
+            } while (randomPage === 23); // Change this number to match current page
+            
+            window.location.href = 'page' + randomPage + '.html';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

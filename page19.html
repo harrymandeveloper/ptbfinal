@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 19</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lorem-text {
+            font-size: 16pt;
+            line-height: 1.2;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .nav-links {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-center mb-4">Page 19</h1>
+        
+        <div class="lorem-text">
+            <p>His death was utterly pointless. Preventable, I’m sure. His parents were only meters away, they went indoors to have sex. They left us with <i>Do not disturb. </i>And parents outranked children and Thomas was thrashing in water and I sat there silent because <i>Do not disturb.</i> I’m sure there would have been time. If I’d shouted and they heard. They’d try at first to ignore it, but eventually they’d have to give in. They’d sigh and curse and untangle themselves, throw on clothes and walk out blinking. They’d shield their eyes from the sun-soaked yard, they’d yawn, they’d sniff, they’d adjust their attention steadily to the sound of a frantic splash. He had a toy shark and I wanted it, to play with, for a while. He refused. Arms folded, small head shaking. I snatched it and threw it in the pool. The shark was his favourite toy, and mine. We needed to get it back. There were armbands in the shed, but they hadn’t been inflated. We were both too small to know how. He leaned and reached without them. Like that. To drown takes time and fighting. There would have been time if I’d acted. I didn’t. I sat on the edge of the rectangle and watched. Hot piss flowed down my leg. It filled the grooves of the pavement, down the length of each slab and around. I felt sick in my tummy and I couldn’t get up. My eyes got wobbly with tears. I knew if I called there’d be trouble. First for disturbing, then again for the shark. For fighting and not being nice. Trouble because I was wetting myself and had pooed in what wasn’t the toilet. I tried to listen to the songs from the birds in cages at the opposite wall. At the calls from the fish sellers cycling outside. I tried to watch sunlight reflecting on the wall as it frenzied itself up and down. I never once tried to call out.</p>
+   
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" class="btn btn-outline-primary">Back to Start</a>
+            <a href="#" class="btn btn-primary continue-link">Continue</a>
+        </div>
+    </div>
+
+    <script>
+        // Generate random continue link (excluding current page and index)
+        document.querySelector('.continue-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            let randomPage;
+            do {
+                randomPage = Math.floor(Math.random() * 29) + 1;
+            } while (randomPage === 19); // Change this number to match current page
+            
+            window.location.href = 'page' + randomPage + '.html';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

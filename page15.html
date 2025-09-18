@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 15</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lorem-text {
+            font-size: 16pt;
+            line-height: 1.2;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .nav-links {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-center mb-4">Page 15</h1>
+        
+        <div class="lorem-text">
+            <p>From two thousand the future looked different. The dreams of lunar casinos had stalled and Mars was a long way distant. I poured instead over picture books of cities below the waves. Perspex domes and tunnels undersea, bubble-like, transparent, and you could see all the fish. In place of clouds, the sparkling shoals. Placid sharks like aeroplanes, lumbering above. One of these books had stickers of fish, and stickers of people too. I thought it would be a joke to put the fish in the town and the humans floating outside. I laughed myself silly at the thought of it– fish going to work in coffee shops, on the underground train with a broadsheet in hand, at desks in open-plan offices. Ergonomic swivel-chairs and the latest PC, their wet fins tapping the keys. In the sixties they loved whack theories and one of them was this– in spite of zero evidence, humans evolved at sea. The depth of it forced us upright, the tide tugged out our fur. Our hands go wrinkly in bathtubs, which the hands of apes do not. As a theory, it’s a stretch. They hadn’t tracked, back then, not fully, the traces of our aqueous past. How our lungs are tinkered swim bladders, our teeth only modified scales. How our lips, repurposed for kissing, are the vestiges of gills. Sometimes I wonder what Thomas would have been if he’d lived to be older than three. If his lung was still a swim bladder and had not ceased to breathe. In a plastic box I found it– the book with stickers and the people outside, the fish pasted upright in a crystalline dome. It’s not so strange as it sounds. I’ve walked between valleys of skyscrapers looking up at the lights going on. One glass fronted building reflecting the next, glass offices and glass apartments. A whole day trapped in fish tanks. And I dream of rising oceans, the swell of a wave that could cover the world, the deep blue calling the shots. </p>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" class="btn btn-outline-primary">Back to Start</a>
+            <a href="#" class="btn btn-primary continue-link">Continue</a>
+        </div>
+    </div>
+
+    <script>
+        // Generate random continue link (excluding current page and index)
+        document.querySelector('.continue-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            let randomPage;
+            do {
+                randomPage = Math.floor(Math.random() * 29) + 1;
+            } while (randomPage === 15); // Change this number to match current page
+            
+            window.location.href = 'page' + randomPage + '.html';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

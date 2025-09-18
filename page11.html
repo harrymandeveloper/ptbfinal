@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 11</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lorem-text {
+            font-size: 16pt;
+            line-height: 1.2;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .nav-links {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-center mb-4">Page 11</h1>
+        
+        <div class="lorem-text">
+            <p><i>Blue has no dimensions</i>, said Klein, <i>it lies beyond dimensions</i>. I’m in a sensory deprivation tank, the salted water buoying me, the anti-smell of cleaning products filling each breath, but in place of aimed-for darkness, blue. A mess, ill-bordered, in front of me, a floating cloud of blue. Blue light sits on visibility’s edge. Its wavelengths are fractionally longer than UV, a colour beyond our sight. To catch them our pupils constrict, bending the lightwaves inward. Blue objects seem to blur at their edges, as the aperture struggles to focus. They appear– like all blurred things– distant, even when close. Blue has no dimensions. The water in the tank is filling my ears, making that bulging expansive static sound you get when your head’s underwater. I drum my fingers on the water’s surface, sending ripples like echolocation. In the Guggenheim Bilbao there’s an unnamed Klein, a vast rectangle of IKB that stretches the gallery’s length. It’s hard to skirt around it without worrying you’ll trip and fall. Fall, and not tear the canvas, but pass through its no-dimension. It was this quality of light that Jarman saw in flashes, as AIDS laid claim to his sight. His final work is a projection of blue, blank and unchanging, as the names of friends who died from AIDS are repeated like meditation. He talks of lapis lazuli, and Marco Polo’s throne, the blue of delphinia in bloom. What fills my vision is lighter, yes, and somehow darker too. The off-hand blue of turquoise. The greenish rim on a peacock’s tail, the blue of cloudless eyes. The eyes in his skull were no shade of blue. That would be a convenient construction. As I remember they were brown, or green, or a mix of brown and green. His dark black pupils must have narrowed and fuzzed at the frenzy of light that bounced off the tiles, the tiles in the pool which were blue. Not the blue of Jarman or Klein, not the blue of the fathomless ocean or sky, but still some tint that may, in time, seem likewise beyond dimensions.</p>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" class="btn btn-outline-primary">Back to Start</a>
+            <a href="#" class="btn btn-primary continue-link">Continue</a>
+        </div>
+    </div>
+
+    <script>
+        // Generate random continue link (excluding current page and index)
+        document.querySelector('.continue-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            let randomPage;
+            do {
+                randomPage = Math.floor(Math.random() * 29) + 1;
+            } while (randomPage === 11); // Change this number to match current page
+            
+            window.location.href = 'page' + randomPage + '.html';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

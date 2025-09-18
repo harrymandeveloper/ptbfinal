@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lorem-text {
+            font-size: 16pt;
+            line-height: 1.2;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .nav-links {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-center mb-4">Page 4</h1>
+        
+        <div class="lorem-text">
+            <p>I never thought it would <i>thunk!</i> so hard when the train hit a man on the tracks. The blaze of summer sunrise settled to a rain-bulged grey. The driver was in bits, they said, and needed to go home. The man was in bits and spread out on the track. There was a new driver coming, <i>it won’t be long now</i>, the single carriage five a.m. train sitting orphaned on the tracks, sitting still as a man lying dead on the tracks, as we waited for the driver to come. On the train was a woman with bags for a flight, loudly complaining about missing the flight. About missing the holiday that followed the flight. There was a couple, middle aged, dressed hopefully for warmth. The middle-aged woman wore sunglasses, pink-rimmed, and a flowery dress, and her hair was dyed blonde and her pink lips were fake. Her middle-aged husband wore a t-shirt two sizes too small. Not an old one though, brand new. You could see the sag of his hanging fat, the mass of hairs, the stomach drooped like a flower that’s dead, protruding the limit of his too-small shirt. The woman had a handbag, and in the bag, a dog. The dog was so still I thought it was fake. We stayed in the carriage four hours. A twenty minute journey delayed by four hours. The police came in to gather our names and to ask us <i>How do you feel?</i> and the woman with suitcases said <i>Angry, I’m missing my flight</i> when they asked her <i>How do you feel?</i> Once the tracks were swept clean of limbs and the helicopter lifted and blade-spun away, the train hauled back to the previous stop, and we waited in the car park, unspeaking, for the taxis to take us away. The taxis were arranged by the train company, and could not change where they went. The woman with luggage was driven to the airport like a hostage against her will. I sat in a taxi with the lady and the dog and the man that was likely her husband. The driver said <i>Been some nonsense with the trains then has there? Fuckers are always on strike.</i> And we all stayed quiet, and it was near nine a.m., or maybe one of us mumbled. I spent six hours in town and nearly missed the train back. When I arrived at the station all sweating and wet they were there on the platform, the woman and dog, and the man with the t-shirt too small. One of those minor synchronicities that seem meaningful, but aren’t. As we boarded the train we made glances, like <i>Let’s hope there isn’t another one!</i> Let’s hope no one else wants to die.</p>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" class="btn btn-outline-primary">Back to Start</a>
+            <a href="#" class="btn btn-primary continue-link">Continue</a>
+        </div>
+    </div>
+
+    <script>
+        // Generate random continue link (excluding current page and index)
+        document.querySelector('.continue-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            let randomPage;
+            do {
+                randomPage = Math.floor(Math.random() * 29) + 1;
+            } while (randomPage === 4); // Change this number to match current page
+            
+            window.location.href = 'page' + randomPage + '.html';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

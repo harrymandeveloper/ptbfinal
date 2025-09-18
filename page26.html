@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 26</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lorem-text {
+            font-size: 16pt;
+            line-height: 1.2;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .nav-links {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-center mb-4">Page 26</h1>
+        
+        <div class="lorem-text">
+            <p>Thomas, you haven’t missed much. Life is dull. They never said. I can’t count the hours I’ve waited for trains, or held the line on calls. Washing socks and wearing them, washing them again. Yes, it’s all important. Yes, it’s also dull. I rearrange pixels on a virtual screen for longer than you’d think possible. Sometimes a butterfly opens its wings. This butterfly, here, right now– Look! And the dullness seems close to worthwhile. Do you remember– you probably don’t– that moment in the sun-drenched garden when everything seemed ok? They zapped your heart with the AED and got a faint murmur back. A tiny, baby-soft, tapping. And when they hooked you into the ambulance, when those clear thin cylinders were snaked down through your nose, your chest began to lift. They took you away and we all felt relief. The miracle of modern science! Thomas, kid, I’ve got to admit, I don’t think heaven exists. Death’s death for me, that’s that. I overheard a stranger at your wake attempting to comfort your mother. <i>God couldn’t wait to have Thomas join Him.</i> And I found myself faintly jealous that you were the one God wanted. Strange to remember it now, your wake. You’d be bored to tears if you’d gone. It was like at church on Sundays, how we fidgeted in the pews. And every week when the first prayer started and the adults bowed their heads, we ran out before they could stop us. All morning playing in the sprinklers, shrieking with joy as the wet flecks hit. I’m not sure what else to tell you. Your mother’s a little insane. Not off-the-rails crazy, but difficult to like. She snaps to anger quickly, and can’t sit without tapping her foot. On the phone the last time I spoke to her, she flatly stated her name. <i>I’m calling to inform you that...</i> As if she worked in sales. Your father took his life. At first very slowly, with cigarettes and booze. When the cancer got bad, all at once. He got in his car and– Well. That’s why your mother called. She phoned to let me know. She lives in the house where you died still, but the pool is filled in with cement. For years she refused to paint over your bedroom walls, but that was a long time ago.</p>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" class="btn btn-outline-primary">Back to Start</a>
+            <a href="#" class="btn btn-primary continue-link">Continue</a>
+        </div>
+    </div>
+
+    <script>
+        // Generate random continue link (excluding current page and index)
+        document.querySelector('.continue-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            let randomPage;
+            do {
+                randomPage = Math.floor(Math.random() * 29) + 1;
+            } while (randomPage === 26); // Change this number to match current page
+            
+            window.location.href = 'page' + randomPage + '.html';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

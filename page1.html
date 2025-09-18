@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lorem-text {
+            font-size: 16pt;
+            line-height: 1.2;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .nav-links {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-center mb-4">Page 1</h1>
+        
+        <div class="lorem-text">
+            <p>In the middle of my life is a rectangle. IKB 79’, Yves Klein, only not that shade of blue. Lighter. Cloudless blue. Cambridge blue. Chlorinated. There’s a painting by Klee called Abstruse, and it looks like a face made of tiles. I had it on a museum postcard on the wall and watched it as I lay there inhaling. The first professional help I got was a counsellor named Tim. He sat with mouth agape. You have your whole life ahead of you, Tim said, as if that weren’t the point. That the whole of life ahead of me had a rectangle slap in its centre. When I lie awake at night I walk very slowly around the long edge and the short, the long edge and the short, and never dip toes in the blue. I’ve tried it all except pocketing stones, or anything to do with the bath. A life of endless rectangles, Tim. The face is made of tiles, like kitchen tiles but blue. Before I started inhaling I ran my towel through the sink and stuffed it under the door. Then I took four disposable barbecue pits from an equally disposable bag, and placed them around the room and lit. Silver tray like take-out food, gauzed top, the coals inside. The kind you use on beaches when the sea is a wide Klein blue. They sold the pits with burger buns and sausages and dip. My equally disposable self. There was a bag and a sock on the fire alarm, I should mention, by the way. Listen! I’ve tried to die but not really. Something always, inhale, a bird with lush trills by the window’s edge or the sunlight refracting, exhale, just right through a pane of glass, something always, breathe! Something tilted me back. I looked at the postcard and remembered the gape. The counsellor whose name was Tim. I remember thinking his jaw would detach and all the clutter of the wide white room– plastic foliage, bendable lamp, my medical notes, my self– the gape would swallow us whole. Then the handle went up-down up-down, and a banging began something crazy. The next time I looked at the postcard was when I was taking it down. It had char lines on its edges. The long edge then the short, and round. Most nights I don’t get to sleep much. I stare at my rectangle, bright like a phone. Like my whole life lying ahead of me. As harrowing as that.</p>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" class="btn btn-outline-primary">Back to Start</a>
+            <a href="#" class="btn btn-primary continue-link">Continue</a>
+        </div>
+    </div>
+
+    <script>
+        // Generate random continue link (excluding current page and index)
+        document.querySelector('.continue-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            let randomPage;
+            do {
+                randomPage = Math.floor(Math.random() * 29) + 1;
+            } while (randomPage === 1); // Change this number to match current page
+            
+            window.location.href = 'page' + randomPage + '.html';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

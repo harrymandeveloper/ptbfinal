@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 8</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lorem-text {
+            font-size: 16pt;
+            line-height: 1.2;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .nav-links {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-center mb-4">Page 8</h1>
+        
+        <div class="lorem-text">
+            <p>One time I watched a tennis ball scudding across a field, flicking drops of dew. I was thirteen or maybe twelve at the time, but I remember it clearly still– the way the water caught the low morning sun with a dazzle of refracted light. I spent a lot of time alone, back then, before school or during break. Staring wistfully to an unseen distance, waiting for someone to approach. None of the other kids fell for it. My desperate bid for interest. The whole of my brain was prickling with the awareness of not being seen. This too– I had a cast and no one signed it. There was a boy in our year who played football, he came up to me smiling with a pencil in hand, and deftly drew a cock. On the cast. No one else came near after that. In the days that followed my cousin’s death, the up and down days with meals at odd times, I was thrilled that no one blamed me. I was three and a half at the time. We sat on the couch eating take-out food, like every day was a special event. I felt like I got away big. Expecting shouts, they gave me kisses. I was held and so felt happy. And grown ups told me that he’d never be back and all I thought was <i>Well. That’s that.</i> After they stopped consoling me, once time had passed and the funeral had been and it was obvious I was not very broken, after that I missed the hugging. Kisses and feeling protected. I have an itch for pity. A cut here or there was easier, by far, than the slog of earning favour. Years later I ran away. Half-running down streets I’d never before walked, dreaming of commotion at home. The wailing and blaming and rending of clothes, the wet slick delta of tears. I waited longer than I thought was possible, the purpling sky dipping to coat the roads, until the arc lights pinged bright and lit my way home, and I was hungry and so I went back. They hadn’t realised I was gone. I felt too much shame to admit that I was. Gone. Fumbling with foil packaging, trying to slit it with a bitten nail. Fists of paracetamol, sweating, and I vomited all on the floor and fell asleep not thinking I’d wake. But I did wake, and cleaned the puke, and no one was any the wiser. To school in the morning with laces tied. A tennis ball bounced on the green.</p>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" class="btn btn-outline-primary">Back to Start</a>
+            <a href="#" class="btn btn-primary continue-link">Continue</a>
+        </div>
+    </div>
+
+    <script>
+        // Generate random continue link (excluding current page and index)
+        document.querySelector('.continue-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            let randomPage;
+            do {
+                randomPage = Math.floor(Math.random() * 29) + 1;
+            } while (randomPage === 8); // Change this number to match current page
+            
+            window.location.href = 'page' + randomPage + '.html';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

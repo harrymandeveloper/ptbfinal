@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 29</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lorem-text {
+            font-size: 16pt;
+            line-height: 1.2;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .nav-links {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-center mb-4">Page 29</h1>
+        
+        <div class="lorem-text">
+            <p>The church had a wide strip of grass at its side, and the sun was heady on the day of the wake. Polyester sweat stains, surreptitiously loosened collars as the service dragged. Around the back where the bins were kept, in the corner of the wall, two storks were building an impossible nest. After I was roundly scolded for feeding crisps to a tortoise, I sulked the perimeter and found it. It teetered atop a flagpole. I threw sticks in the air as high as I could, which was not high, and I can’t remember now if this was to try and help them build or to try and knock them down. Two weeks later the warm air broke. Droplets off the estuary, off the skim of a backyard pool, droplets from the sweat on the faces of fishermen, all these droplets ascended and mingled until the clouds they formed grew bulimic with rain and dashed themselves on the slabs. Lightning webbed the air with the flashed exactitude of a predator making the kill. I ran outside in skirmishes and retreated, sopping, to the glass front porch, jumping on the spot and howling. Rinse and repeat when the rain whipped up. The trees in our garden buffeted against the electrified fence of the yacht club next door, cascades of orange sparks like hot metal being struck. Next morning the rain had retreated and the world was sparkling wet. We made it to church down the riverine streets. When the parishioners bowed their heads in prayer, I ran outside to play. The sprinklers were turned off but the wet slips of grass flung dew up my legs and darkened the hem of my shorts. Then I remembered the storks at the back and swerved mid-lap to find them. By the pole of the flag lay a tangle of sticks. Amongst them, woven through like beads, the fat pink bulges of chicks. Their globed and vacant eyes, plasticy yellow beaks, fur tufts on arms bend backwards. Slumped bodies, lumped and useless, like thieves unpinned from the cross. The parent storks were gone. They had flown on, to some new pole, found sticks and tried again.</p>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" class="btn btn-outline-primary">Back to Start</a>
+            <a href="#" class="btn btn-primary continue-link">Continue</a>
+        </div>
+    </div>
+
+    <script>
+        // Generate random continue link (excluding current page and index)
+        document.querySelector('.continue-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            let randomPage;
+            do {
+                randomPage = Math.floor(Math.random() * 29) + 1;
+            } while (randomPage === 29); // Change this number to match current page
+            
+            window.location.href = 'page' + randomPage + '.html';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

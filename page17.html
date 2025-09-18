@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 17</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lorem-text {
+            font-size: 16pt;
+            line-height: 1.2;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .nav-links {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-center mb-4">Page 17</h1>
+        
+        <div class="lorem-text">
+            <p>If anyone asked me at any time from the moment I could speak until the moment Thomas drowned, if anyone asked me what animal I liked best, I would respond emphatically <i>Shark!</i> My mother put on <i>Blue Planet</i>, I made her skip to the bits about sharks. I had books that said how to draw them, how make masks from paper plates. I was too clumsy to draw or make masks, but I looked at the pictures intently. I wore shark pyjamas and memorised facts and asked to be bought a Great White. One day I gave them up. It was not a conscious choice, but felt. My stomach would start to feel sick. Thomas had a toy shark that he dipped in the pool. It was better than anything I had. It took both hands to hold. When his back was turned I would steal it, and lie on the grass gazing up at the sky. I’d move the shark like an aeroplane through the blue I pretended was water. The shark was very detailed and had been painted by hand, and all the paint stayed inside of the lines like a very good grown-up had done it. He came and snatched it back. As he turned I pushed him over, I grabbed the shark and I threw it. It landed in the pool. There were armbands in the shed, but they were empty. Our understanding was not yet good, and we struggled with the valve. He reached from the edge without armbands. The rectangle swallowed him whole. That’s when the tummy-sick started. I watched the shark as it bobbed between waves. I gazed at its well-painted eye. The thrashing of water grew loud and then soft. A well-painted eye and an open mouth, I stared at the water lapping over its fins and tried hard to think about sharks. How they grow new teeth every couple of weeks. How their skeletons are not made of bone. How they never stop swimming, not even to sleep.</p>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" class="btn btn-outline-primary">Back to Start</a>
+            <a href="#" class="btn btn-primary continue-link">Continue</a>
+        </div>
+    </div>
+
+    <script>
+        // Generate random continue link (excluding current page and index)
+        document.querySelector('.continue-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            let randomPage;
+            do {
+                randomPage = Math.floor(Math.random() * 29) + 1;
+            } while (randomPage === 17); // Change this number to match current page
+            
+            window.location.href = 'page' + randomPage + '.html';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

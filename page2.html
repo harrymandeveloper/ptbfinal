@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lorem-text {
+            font-size: 16pt;
+            line-height: 1.2;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .nav-links {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-center mb-4">Page 2</h1>
+        
+        <div class="lorem-text">
+            <p>Maybe I’m at a party. Maybe I’m in its brunt. Maybe it’s the same party it always is, and these people are the same as they always are, even though I’m half the planet away and don’t know who anyone is. Maybe everyone here is happy. Happy in a way that’s sick. Happy like <i>How are they happy?</i> Happy like they’re nothing at all. Their words are algorithmic. Their hands, drunk and groping, are neural nets in motion. You could play this scene the world around and all would smile and nod. In school I started a story like so: <i>Last year my uncle killed himself, which really pissed me off because I’d always wanted to kill myself, only now it would look like copying.</i> Which caused a lot of concern. The story did. At the time. The men at the party are creeps. I see them in corners surveying, selecting targets, is she drunk enough? then approach, jovial greeting to some guy they barely know in the visible vicinity of she’s clearly drunk so that all looks unsuspicious. Then hand on the small of the back and stand behind and dance. Close in. Groin to gluteal contact. Hands around the waist to steady yourself, sing along, act smashed, if you’re pissed there’s always forgiveness. Was I ever like this myself? When I used to be empty and felt I was full, when I knew all the songs and danced every night and felt all the cameras in focus. Once when young and empty I walked through a park on the way to a lecture and somebody called something out. I had headphones in. I removed them. It was a homeless man on a bench. I’m sorry I don’t have– <i>Didn’t ask.</i> What? <i>You’re boring. I said you’re boring. You’re boring.</i> And he spat. And I remember feeling so outraged because he was just some pisshead on a bench and didn’t know me, didn’t know my rich and tapestried inner world, because how could I be boring when I went to parties every night and knew all the songs, and now here I am wanting to grab every person and spit in their drink You’re boring. Someone comes up and I think they’re going to ask if I’m ok, maybe do I want to talk? <i>Do you know where Jade is?</i> shouted over the music. I don’t answer. I don’t know anyone’s name. <i>Jay-DUH?!</i> She shouts like I’m aberrant and sick. I say I don’t know. I hope that she’s dead. Everyone’s a fractal that forms in the air and lives a short time and then melts. All that survives is a scatter of bones and the difference we make in the world. Nights like these are the best there is! The joy and music melt.</p>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" class="btn btn-outline-primary">Back to Start</a>
+            <a href="#" class="btn btn-primary continue-link">Continue</a>
+        </div>
+    </div>
+
+    <script>
+        // Generate random continue link (excluding current page and index)
+        document.querySelector('.continue-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            let randomPage;
+            do {
+                randomPage = Math.floor(Math.random() * 29) + 1;
+            } while (randomPage === 2); // Change this number to match current page
+            
+            window.location.href = 'page' + randomPage + '.html';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 22</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .lorem-text {
+            font-size: 16pt;
+            line-height: 1.2;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .nav-links {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1 class="text-center mb-4">Page 22</h1>
+        
+        <div class="lorem-text">
+            <p><i>There are plenty of firemen in heaven</i>, someone said at Thomas’ wake. Which I think was well intentioned. He wanted to be a fireman, or that’s what he said when asked. He watched them on TV– cartoons, not real people. I once met a firefighter drunk at a pub. He told me about a man that week who jumped from a building being eaten by flame. The anti-theft spikes of the fence outside plunged themselves into his lung. It took him twenty minutes to die. The firefighter held his hand for a while, but was told to get back on the hose. <i>The sight will be with me forever</i>, he said, <i>the dead man’s open eyes.</i> I wonder if it was like that for the paramedics who handled Thomas. If they went home afterwards and poured themselves a whiskey, neat, and sat on the front porch smoking. Got into bed late and lay there awake and flinched at the touch of the person they loved. Or whether, conversely, it was another day’s work. Dinner with the family, ask the kids about school, wash up while singing <i>Moon River</i>. I knew an ambulance technician once, he said such days are routine. Like the time he was called to a drug den, he said. About five of them holed up in a very small room where spray paint slathered the walls. Dents in the carpet where furniture had been, though of course they’d long since sold it. Some stood sheepish and hid hypodermics whilst others tried to send him away. In the bathtub a baby was floating face down. Her lips were already blue. It had been a day at least. The mother was screaming, throwing bottles at the wall, at the men, until they smashed. A paramedic can’t declare anyone dead, it takes a doctor to do that. So he had to keep trying, he said, though he already knew. The whole hour’s drive, pressing down with two fingers and putting his too-big lips against hers. Pressing down and down and hoping. In the back of the ambulance the mother was not calm, she shouted abuse and kept scratching his arm. Pandora’s box held all the world’s ills, and one of them was hope.</p>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" class="btn btn-outline-primary">Back to Start</a>
+            <a href="#" class="btn btn-primary continue-link">Continue</a>
+        </div>
+    </div>
+
+    <script>
+        // Generate random continue link (excluding current page and index)
+        document.querySelector('.continue-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            let randomPage;
+            do {
+                randomPage = Math.floor(Math.random() * 29) + 1;
+            } while (randomPage === 22); // Change this number to match current page
+            
+            window.location.href = 'page' + randomPage + '.html';
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
